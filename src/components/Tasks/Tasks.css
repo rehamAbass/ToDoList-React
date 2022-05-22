@@ -1,0 +1,11 @@
+.tasks {
+    /* content-visibility: 0%; */
+
+    content: none;
+    /* opacity: 0%; */
+}
+
+.tasks:hover {
+    content: normal;
+    /* opacity: 1; */
+}

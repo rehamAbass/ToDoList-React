@@ -1,0 +1,23 @@
+.addList {
+    color: black;
+    font-size: large;
+    font-family: cursive;
+    font-style: italic;
+    /* box-shadow: 1px 1px 1px 1px rgba(86, 244, 236, 0.543); */
+    box-shadow: 1px 1px 1px 1px rgba(0, 10, 104, 1);
+    min-width: max-content;
+    height: min-content;
+    /* max-width: 3em; */
+    border-radius: 5%;
+
+}
+
+.addList:hover {
+    /* background-color: rgba(20, 206, 57, 0.44); */
+    cursor: pointer;
+    background-color: rgba(98, 91, 248, 0.877);
+}
+
+.l {
+    background-color: rgba(103, 103, 103, 0.644);
+}

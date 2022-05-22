@@ -1,0 +1,29 @@
+input {
+    /* width: 70%; */
+    color: black;
+    padding: 4px;
+    font-size: normal;
+    font-family: cursive;
+    /* font-style: oblique; */
+    /* font-weight: 100; */
+    text-align: start;
+    margin: 5px;
+    border-radius: 2%;
+    box-sizing: content-box;
+    max-width: fit-content;
+    min-width: max-content;
+    min-height: max-content;
+    /* height: fit-content; */
+    background-color: rgba(255, 245, 245, 0.603);
+    /* text-align: left; */
+    text-justify: newspaper;
+    width: fit-content;
+    height: 18px;
+}
+
+input:hover {
+    height: max-content;
+    width: fit-content;
+    font-weight: 400;
+    font-size: medium;
+}

@@ -5,9 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+background-color: rgba(249, 249, 185, 0.607);
+  /* 249 */
+  /* background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wtbz?ver=f0ae"); */
+  ;
+
+  /* background-image: url("../src/pictures/mm.jpg"); */
+  /* background-position: -1; */
+  background-size: cover;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

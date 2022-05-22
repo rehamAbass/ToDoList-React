@@ -1,0 +1,14 @@
+.lists {
+    display: grid;
+    /* -ms-grid-row-align: stretch; */
+    grid-template-columns: 20cm 10cm;
+    /* grid-template-columns: 10ch 10ch 10ch; */
+    /* grid-template-columns: 30vh 30vh 30vh 30vh; */
+    /* grid-template-columns: max-content; */
+    /* grid-template-columns: 40ex 40ex 40ex; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-gap: 100px; */
+
+    align-items: center;
+    justify-content: center;
+}
