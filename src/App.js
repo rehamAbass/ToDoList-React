@@ -6,7 +6,6 @@ import AddCardButton from './components/Buttons/AddCardButton/AddCard'
 import React from 'react'
 import { useState, useEffect } from 'react'
 function App() {
-  // const [tasks, setTasks] = useState([])
   const [cards, setCards] = useState([])
   //---------------------------------------------------------------------------------------------------
   useEffect(() => {
@@ -25,20 +24,6 @@ function App() {
     return data
   }
   //---------------------------------------------------------------------
-  // const updateCards = async () => {
-  //   const res = await fetch('http://localhost:5000/cards', {
-  //     method: 'PUT',
-  //     headers: {
-  //       'Content-type': 'application/json',
-  //     },
-  //     body: JSON.stringify(cards),
-  //   })
-  //   const data = await res.json()
-  //   if (res.status === 200) {
-  //     console.log("all cards updated indexes");
-  //   }
-  // }
-  //--------------------------------------------------------------------
   const deleteCard = async (id) => {
     const res = await fetch(`http://localhost:5000/cards/${id}`, {
       method: 'DELETE',
@@ -58,13 +43,6 @@ function App() {
     const data = await res.json()
     return data
   }
-  //--------------------------------------------------------------------------------
-  //Fetch Tasks
-  // const getTasks = async (id) => {
-  //   const res = await fetch(`http://localhost:5000/cards/${id}/tasks`)
-  //   const data = await res.json()
-  //   return data;
-  // }
   //-------------------------------------------------------------------------------
   //Fetch Task
   const getTask = async (id_card, id_task) => {

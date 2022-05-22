@@ -2,7 +2,7 @@ import { FaTimes } from 'react-icons/fa'
 import React from 'react'
 import { useState } from 'react'
 import './Card.css'
-// import '../Buttons/AddTaskButton/AddTask.css'
+
 import Tasks from '../Tasks/Tasks.jsx'
 const Card = ({ key, card, deleteCard, deleteTaskServer, addTaskServer, background }) => {
 

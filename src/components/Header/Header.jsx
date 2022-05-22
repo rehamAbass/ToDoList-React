@@ -1,4 +1,4 @@
-// import { PropTypes } from "react";
+
 import './Header.css'
 import React from 'react'
 
@@ -6,16 +6,13 @@ const Header = () => {
 
     return (
         <header style={{
-            // backgroundColor: "rgba(210, 210, 250, 0.75)",
             backgroundColor: "rgba(210,210,210,0.2)",
-            // boxShadow: "2px 3px 2px 3px rgba(200, 210, 104, 1)"
             boxShadow: "2px 3px 2px 3px rgba(190,130,10, 0.2)"
         }}>
             <h2
                 style={{
                     marginBottom: "0px",
                     textAlign: "center",
-                    // textShadow: "1px 1px 1px black",
                     fontFamily: "cursive", fontSize: "700",
                 }}>
                 Welcome to Reham Abass project
@@ -40,11 +37,5 @@ const Header = () => {
     )
 }
 
-// Header.defaultProps = {
-//     title: 'Task Tracker',
-// }
-// Header.propTypes = {
-//     title: PropTypes.string.isRequired,
-// }
 
 export default Header;
