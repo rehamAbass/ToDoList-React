@@ -8,6 +8,12 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 
+
+
+<!--  // ,"server": "json-server --watch  db.json --port 5000" -->
+
+
+
 ### `npm run build`  >> then :  `serve -s build`
 
 Builds the app for production to the `build` folder.\

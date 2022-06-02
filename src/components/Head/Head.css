@@ -1,0 +1,10 @@
+.Head {
+    /* -ms-flex-align: start;
+    flex-wrap: nowrap;
+    flex-basis: content;
+    -ms-flex-item-align: baseline; */
+    float: inline-start;
+    align-items: baseline;
+    flex-direction: row;
+    /* -ms-flex-align: start; */
+}

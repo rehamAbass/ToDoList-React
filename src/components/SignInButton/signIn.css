@@ -1,0 +1,28 @@
+.signInButton {
+
+    /* margin: 1% 0 0 90%; */
+    position: relative;
+    margin-left: 80%;
+    margin-top: 1%;
+    /* margin-left: 80%; */
+    text-shadow: 1px black;
+    background-color: honeydew;
+
+    color: black;
+    font-size: large;
+    font-family: cursive;
+    font-style: italic;
+    box-shadow: 1px 1px 1px 1px rgba(86, 102, 244, 0.543);
+    /* rgba(0, 10, 104, 1)  */
+    min-width: max-content;
+    /* max-width: 3em; */
+    border-radius: 5%;
+
+}
+
+.signInButton:hover {
+    /* background-color: rgba(20, 206, 57, 0.44); */
+    cursor: pointer;
+    background-color: rgba(86, 102, 244, 0.543);
+    /* aquamarine; */
+}

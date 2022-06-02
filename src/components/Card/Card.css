@@ -1,9 +1,11 @@
 .list {
-    color: rgb(0, 0, 0);
-    border-radius: 2%;
+    color: rgb(255, 255, 255);
+        /* border-radius: 1%; */
     padding: 1px 2px;
-    margin: 30px 1px;
-    height: 100px;
+    margin: 10px 1px;
+        margin-left: 20px;
+        margin-top: 30px;
+        height: min-content;
     /* align-items: start; */
     position: relative;
     transform: translateZ(0);
@@ -15,25 +17,33 @@
     content: none;
     border: 1px solid rgba(0, 0, 0, 0.4);
     transition: transform 0.5s ease-out;
-    /* grid-template-columns: 1h 1h 1h 1h 1h; */
-    max-width: fit-content;
-    min-width: max-content;
+    width: 250px;
+    
+        /* max-height: min-content; */
+        /* height: 300px; */
+        overflow-y: scroll;
+        border-radius: 2%;
+        /* min-width: max-content; */
 }
 
 .list:hover {
-    transform: scale(1.2);
-    box-shadow: 1px 1px 30px 5px rgba(7, 37, 138, 0.808);
-    /* rgba(0, 0, 0, 0.788); */
+    margin: 100px;
+        width: content;
+        /* min-height: max-content; */
+        transform: scale(1.5);
+        box-shadow: 1px 1px 16px 10px rgba(81, 20, 100, 0.616);
+        /* rgba(85, 83, 255 */
     min-height: max-content;
     min-height: min-content;
-    max-width: fit-content;
-    min-width: max-content;
     max-height: max-content;
     /* font-size: larger;
     font-weight: bolder;
     font-style: italic; */
-    border-radius: 6%;
-    height: fit-content;
+    border-radius: 4%;
+        height: fit-content;
+        /* 300px; */
+        
+            max-width: 750px !important;
 }
 
 .add-form {
@@ -57,11 +67,10 @@
 }
 
 .title {
-
-    color: black;
-    font-size: x-large;
+color: rgb(0, 0, 0);
+    font-size: large;
     font-family: cursive;
-    font-weight: 900;
+    font-weight: 800;
     font-style: italic;
     margin: 10px;
 }
@@ -71,20 +80,17 @@
     font-size: large;
     font-family: cursive;
     font-style: italic;
-    box-shadow: 1px 1px 1px 1px rgba(0, 10, 104, 1);
-    width: 8em;
-    height: min-content;
-    margin-left: 3%;
-    margin-bottom: 3px;
-    border-radius: 4%;
+    box-shadow: 1px 1px 1px 1px rgba(60, 0, 255, 0.674);
+        width: 5em;
+        height: fit-content;
+        margin-bottom: 2px;
+        border-radius: 2%;
     border: 1px black;
-    background-color: rgba(250, 241, 230, 0.87);
-
+    background-color: rgba(255, 255, 255, 0.267)
 }
 
 .addbtn:hover {
-    /* background-color: rgba(20, 206, 57, 0.44); */
     cursor: pointer;
-    /* background-color: rgba(208, 252, 238, 0.92); */
-    /* background-color: rgba(32, 25, 169, 0.772); */
+    /* background-color: */
+        background-color: rgba(243, 241, 255, 0.742);
 }

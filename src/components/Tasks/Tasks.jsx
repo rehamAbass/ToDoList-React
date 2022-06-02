@@ -3,7 +3,7 @@ import './Tasks.css'
 import Task from '../Task/Task'
 
 
-const Tasks = ({ tasks, deleteTask }) => {
+const Tasks = ({ tasks, deleteTask, toggleTask }) => {
     return (
         <div className='tasks'>
             {tasks.map((t, i) =>
@@ -11,6 +11,7 @@ const Tasks = ({ tasks, deleteTask }) => {
                     index={i}
                     key={i}
                     task={t}
+                    toggleTask={toggleTask}
                     deleteTask={deleteTask}
                 />
             )}

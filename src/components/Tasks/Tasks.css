@@ -1,11 +1,41 @@
 .tasks {
-    /* content-visibility: 0%; */
+    /* content: none; */
+        min-height: 0px;
+        max-height: 70px;
+        overflow-y: scroll;
+        scroll-behavior: auto;
+        /* scrollbar-color: rgba(10, 10, 100, 0.9); */
+        /* scrollbar-color: inherit; */
+        /* scrollbar-color: initial; */
+        scrollbar-width: thin;
+        scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    }
+    
+    .tasks:hover {
+        max-height: max-content;
+        width: content;
+        /* max-width: 500px; */
+    }
+    
+    
+    
+    * {
+        --scrollbarBG: #ffffff65;
+        --thumbBG: #ffffffd0;
+        /* background: rgba(0, 0, 0, 0.701); */
+        /* overflow: hidden; */
+    }
+    
+    .tasks::-webkit-scrollbar {
+        width: 9px;
+    }
 
-    content: none;
-    /* opacity: 0%; */
+.tasks::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
 }
 
-.tasks:hover {
-    content: normal;
-    /* opacity: 1; */
+.tasks::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
 }

@@ -6,169 +6,13 @@
       "tasks": [
         {
           "id": 14687,
+          "completed": false,
           "text": "خير ان شاء الله"
         },
         {
           "id": 18185,
+          "completed": false,
           "text": "سبحان الله"
-        },
-        {
-          "id": 14015,
-          "text": "الله الله الله"
-        },
-        {
-          "id": 11782,
-          "text": ">> ولا تعلم نفسا ماذا تكسب غدا <<"
-        }
-      ]
-    },
-    {
-      "id": 64635,
-      "title": "OOP",
-      "tasks": [
-        {
-          "id": 14653,
-          "text": "Encapsulation"
-        },
-        {
-          "id": 15614,
-          "text": "Inheritance"
-        },
-        {
-          "id": 5777,
-          "text": "Abstractions"
-        },
-        {
-          "id": 7859,
-          "text": "Polymorphism"
-        }
-      ]
-    },
-    {
-      "id": 435178,
-      "title": "Angular 10",
-      "tasks": [
-        {
-          "id": 10821,
-          "text": "Rest Api"
-        },
-        {
-          "id": 4055,
-          "text": "Services"
-        }
-      ]
-    },
-    {
-      "id": 518258,
-      "title": "איך להתכונן לראיון עבודה ?",
-      "tasks": [
-        {
-          "id": 7148,
-          "text": "אמונה עצמית"
-        },
-        {
-          "id": 16846,
-          "text": "להירגע"
-        },
-        {
-          "id": 3190,
-          "text": "לאהוב המקום להתחבר אליו עוד לפני הראיון"
-        },
-        {
-          "id": 6222,
-          "text": "לדבר עם אנשים משם"
-        },
-        {
-          "id": 16889,
-          "text": "בטחון עצמי"
-        },
-        {
-          "id": 16581,
-          "text": "להתכונן טכנית leetCode - ClassDoor"
-        }
-      ]
-    },
-    {
-      "id": 391437,
-      "title": "new life",
-      "tasks": [
-        {
-          "id": 13906,
-          "text": "😍 "
-        },
-        {
-          "id": 9028,
-          "text": "😊 😍 "
-        },
-        {
-          "id": 15593,
-          "text": "new job"
-        },
-        {
-          "id": 7847,
-          "text": "☺ "
-        },
-        {
-          "id": 18424,
-          "text": "♥ "
-        },
-        {
-          "id": 17889,
-          "text": "😂 "
-        },
-        {
-          "id": 16680,
-          "text": "😂  😂  😂 "
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "title": "card 1",
-      "tasks": [
-        {
-          "id": 1,
-          "text": "solving problem on leetcode"
-        },
-        {
-          "id": 2,
-          "text": "solving problem on codality"
-        },
-        {
-          "id": 3,
-          "text": "Angular 10 tutorials"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "title": "card 2",
-      "tasks": [
-        {
-          "id": 1,
-          "text": "English interviews"
-        },
-        {
-          "id": 2,
-          "text": "tell me about your experince in english"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "card 3",
-      "tasks": [
-        {
-          "id": 1,
-          "text": "intel interviews"
-        },
-        {
-          "id": 2,
-          "text": "what is your plan in 5 years?"
-        },
-        {
-          "id": 3,
-          "text": "why did you left your job?"
         }
       ]
     },
@@ -178,59 +22,51 @@
       "tasks": [
         {
           "id": 1,
+          "completed": false,
           "text": "what do you know about OOP"
-        },
-        {
-          "id": 2,
-          "text": "what do you know about DATA STRUCTURES ?"
-        },
-        {
-          "id": 3,
-          "text": "what is Angular 10 ? what do you know about it ?"
-        },
-        {
-          "id": 4,
-          "text": "do you have a project in Angular 10 ?"
         }
       ]
     },
     {
-      "id": 523218,
-      "title": "ya r07y",
+      "id": 482887,
+      "title": "tracXpoint",
       "tasks": [
         {
-          "id": 4089,
-          "text": "todayy is monday , it  is 4:10 AM"
-        },
-        {
-          "id": 2873,
-          "text": "I can not sleep because programming is  my passion !!"
-        },
-        {
-          "id": 6960,
-          "text": "I am happy happy-go-lucky "
-        },
-        {
-          "id": 2256,
-          "text": "😊  😍  love React"
+          "id": 14012,
+          "completed": false,
+          "text": "Angularrrrrrrrr"
         }
       ]
     },
     {
-      "id": 461745,
-      "title": "טיולים לעתיד",
+      "id": 50685,
+      "title": "👋 ",
       "tasks": [
         {
-          "id": 9389,
-          "text": "ארצות הברית"
+          "id": 10947,
+          "completed": false,
+          "text": "نيشر"
         },
         {
-          "id": 1098,
-          "text": "לונדון"
-        },
+          "id": 7363,
+          "completed": false,
+          "text": "נישר"
+        }
+      ]
+    },
+    {
+      "id": 119970,
+      "title": "משמשמשמש",
+      "tasks": []
+    },
+    {
+      "id": 154566,
+      "title": "מהנדסת תוכנה  - עובדת הייטק",
+      "tasks": [
         {
-          "id": 12230,
-          "text": "texas"
+          "id": 16031,
+          "completed": false,
+          "text": "lalalall"
         }
       ]
     }

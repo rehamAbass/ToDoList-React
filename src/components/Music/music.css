@@ -1,0 +1,94 @@
+.allSongsDiv {
+    /* align-items: baseline;
+    align-self: baseline;
+    align-content: space-around;
+    flex-direction: row; */
+    margin-left: 50px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    justify-content: center;
+    /* color: aqua; */
+}
+
+
+
+
+.buttonSong {
+    /* margin: 1% 0 0 90%; */
+    /* position: fixed; */
+    /* position: absolute; */
+    /* margin-left: 40%; */
+    /* margin-top: 1%; */
+    /* margin-left: 80%; */
+    /* padding: "1px";
+    background-color: rgba(32, 247, 197, 0.269);  */
+    align-self: baseline;
+    padding: auto;
+    padding-top: 2px;
+    padding-left: 4px;
+    margin-left: 25px;
+    margin-top: 1%;
+    color: rgb(17, 0, 255);
+    background-color: rgb(240, 248, 255);
+    font-size: large;
+    font-family: cursive;
+    font-style: italic;
+    box-shadow: 1px 1px 1px 1px rgba(86, 102, 244, 0.543);
+    /* rgba(0, 10, 104, 1)  */
+    min-width: max-content;
+    max-width: 145px;
+    /* max-width: 3em; */
+    border-radius: 17%;
+    border: 10px rgb(0, 0, 0);
+
+}
+
+.buttonSong:hover {
+    background-color: rgb(0, 30, 255);
+    cursor: pointer;
+    /* background-color: rgba(0, 0, 0, 0.543); */
+    box-shadow: 1px 10px 24px 4px rgba(0, 0, 0, 0.842);
+    color: rgb(255, 255, 255);
+    /* aquamarine; */
+}
+
+
+
+
+/* 
+
+
+
+
+*/
+
+.listen {
+    margin-left: -40%;
+    margin-top: 1%;
+    /* padding: "1px";
+    text-shadow: 1px black;
+    background-color: rgba(32, 247, 197, 0.269);  */
+    /* position: fixed; */
+    position: absolute;
+    flex-direction: row;
+    align-self: baseline;
+    color: black;
+    font-size: large;
+    font-family: cursive;
+    font-style: italic;
+    box-shadow: 1px 1px 1px 1px rgba(86, 102, 244, 0.543);
+    /* rgba(0, 10, 104, 1)  */
+    min-width: max-content;
+    /* max-width: 3em; */
+    border-radius: 5%;
+
+}
+
+.listen:hover {
+    /* background-color: rgba(20, 206, 57, 0.44); */
+    cursor: pointer;
+    background-color: rgba(255, 221, 0, 0.694);
+    /* aquamarine; */
+}

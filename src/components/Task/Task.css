@@ -1,23 +1,26 @@
 .task {
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.58);
-    border-radius: 5%;
-    margin: 1px 20px;
-    padding: 0px 20px;
+    box-shadow: 1px 1px 1px rgba(93, 69, 253, 0.8);
+        border-radius: 6%;
+        margin: 2px 2px;
+        padding: 0px 20px;
     cursor: pointer;
     text-align: start;
-    color: black;
-    font-size: large;
+    color: rgb(2, 2, 2);
+        font-size: medium;
     font-family: cursive;
-    font-style: italic;
-    /* text-shadow: 1px black; */
-    /* font-size: medium; */
-    font-weight: 100 !important;
-    /* font-style: normal; */
-    /* font-family: cursive; */
-    height: min-content;
+        font-style: italic;
+            font-weight: 400 !important;
+                /* background-color: rgba(0, 0, 0, 0.183); */
 
+}
+.strike {
+    text-decoration: line-through;
 }
 
 .task:hover {
-    background-color: white;
+    height: min-content;
+        /* background-color: rgba(255, 255, 255, 0.797); */
+        background-color: rgba(255, 255, 255, 0.9);
+        /* width: fit-content; */
+        max-width: 600px !important;
 }
