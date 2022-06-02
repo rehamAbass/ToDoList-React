@@ -5,7 +5,7 @@ import './Card.css'
 
 import Tasks from '../Tasks/Tasks.jsx'
 const Card = ({ key, card, deleteCard, deleteTaskServer,
-    addTaskServer, background, taggleTaskServer }) => {
+    addTaskServer, background, toggleTaskServer }) => {
 
     const [text, setText] = useState('');
     //-------------------------------------------------
@@ -13,9 +13,8 @@ const Card = ({ key, card, deleteCard, deleteTaskServer,
         deleteTaskServer(card.id, id);
     }
     //-------------------------------------------------
-    const taggleCompleted = async (taskId) => {
-        // await taggleTaskServer(card.id, taskId);
-        console.log("fire on fire, taskId = ", taskId);
+    const completedTask = (id) => {
+        // toggleTaskServer(card.id, id);
     }
     //---------------------------------------------------
     const saveTask = (text) => {
@@ -60,7 +59,7 @@ const Card = ({ key, card, deleteCard, deleteTaskServer,
                 <button type='submit' className='addbtn'>add Task</button>
 
             </form>
-            <Tasks tasks={card.tasks} deleteTask={deleteTask} toggleTask={taggleCompleted} />
+            <Tasks tasks={card.tasks} deleteTask={deleteTask} toggleTask={completedTask} />
         </div>
     )
 }

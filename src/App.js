@@ -5,10 +5,7 @@ import SignInButton from './components/SignInButton/signin.jsx'
 import AddCardButton from './components/Buttons/AddCardButton/AddCard'
 import React from 'react'
 import { useState, useEffect } from 'react'
-// import Music from './components/Music/Music.jsx';
 import Head from './components/Head/Head.jsx';
-
-import './myDataBase.json' 
 
 function App() {
   const [cards, setCards] = useState([])
@@ -24,10 +21,7 @@ function App() {
   //------------------------------------------------------------------------------------------------------
   // Fetch Tasks
   const fetchCards = async () => {
-
     const res = await fetch('http://localhost:5000/cards')
-    // const res = await fetch('./myDataBase.json')
-
     const data = await res.json();
     if (res.status === 200) {
       setCards(data);
@@ -40,7 +34,6 @@ function App() {
   //---------------------------------------------------------------------
   const deleteCard = async (id) => {
     const res = await fetch(`http://localhost:5000/cards/${id}`, {
-    // const res = await fetch(`./myDataBase.json/cards/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-type': 'application/json',
@@ -54,7 +47,6 @@ function App() {
   //---------------------------------------------------------------------------------------------------
   //fetch card
   const getCard = async (id) => {
-    // const res = await fetch(`./myDataBase.json/cards/${id}`);
     const res = await fetch(`http://localhost:5000/cards/${id}`);
     const data = await res.json()
     return data
@@ -63,7 +55,6 @@ function App() {
   //Fetch Task
   const getTask = async (id_card, id_task) => {
     const res = await fetch(`http://localhost:5000/cards/${id_card}/tasks/${id_task}`)
-    // const res = await fetch(`./myDataBase.json/cards/${id_card}/tasks/${id_task}`)
     const data = await res.json()
     return data
   }
@@ -80,8 +71,7 @@ function App() {
     updatedTasks = [...updatedTasks, newTask];
     const updatedCard = { id: id, title: card.title, tasks: updatedTasks }
     let ourCards = cards.map(c => c.id === id ? updatedCard : c);
-    const res = await fetch(`http://localhost:5000/cards/${id}`, {//./myDataBase.json/
-    // const res = await fetch(`./myDataBase.json/cards/${id}`, {
+    const res = await fetch(`http://localhost:5000/cards/${id}`, {
       method: 'PUT',
       headers: {
         'Content-type': 'application/json',
@@ -98,8 +88,7 @@ function App() {
   const addNewCard = async (title) => {
     let newId = Math.floor(Math.random() * 17890) * 31;
     let newCard = { id: newId, title: title, tasks: [] }
-    const res = await fetch('http://localhost:5000/cards', {//./ myDataBase.json
-    // const res = await fetch('./ myDataBase.json/cards', {//./ myDataBase.json
+    const res = await fetch('http://localhost:5000/cards', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -113,18 +102,16 @@ function App() {
     else { alert('Error Adding new card'); }
   }
   //-------------------------------------------------------------------------------------------------
-  const taggleTask = async (id, id_task) => {
+  const toggleTask = async (id, id_task) => {
     let card = cards.filter(c => c.id === id);
     card = card[0];
-    let myTask = card.tasks.filter(t => t.id === id_task);
-    myTask = myTask[0];
-    // myTask.completed = !myTask.completed;
-    if (myTask.completed === true) { myTask.completed = false }
-    else { myTask.completed = true; }
+    console.log("in toggle , card name = ", card.title);
+    let task = card.tasks.filter(t => t.id === id_task);
+    task = task[0];
+    console.log("in toggle , task id = ", task.id, " - completed = ", task.completed);
+    task.completed = !task.completed;
 
-    let updatedTasks = card.tasks.filter(t =>
-      t.id !== id_task ?
-        t : myTask);
+    let updatedTasks = card.tasks.map(t => t.id === id_task ? task : t);
 
     let updatedCard = {
       id: id,
@@ -132,10 +119,9 @@ function App() {
       tasks: updatedTasks
     }
 
-    console.log("task.text = ", myTask.text, " , changed to completed =", myTask.completed);
+    console.log("task.id = ", task.id, " , changed to completed =", task.completed);
 
     const res = await fetch(`http://localhost:5000/cards/${id}`, {
-      // const res = await fetch(`./myDataBase.json/cards/${id}`, {
       method: 'PUT',
       headers: {
         'Content-type': 'application/json',
@@ -146,7 +132,7 @@ function App() {
     if (res.status === 200) {
       await fetchCards();
     }
-    else { alert('Error change completed for task :', myTask.text); }
+    else { alert('Error change completed for task :', task.id); }
   }
   //========================================================================
   // Delete Task
@@ -160,8 +146,6 @@ function App() {
       title: card.title,
       tasks: updatedTasks
     }
-
-    // const res = await fetch(`./myDataBase.json/cards/${id}`, {
     const res = await fetch(`http://localhost:5000/cards/${id}`, {
       method: 'PUT',
       headers: {
@@ -187,7 +171,7 @@ function App() {
           cards={cards}
           deleteCard={deleteCard}
           deleteTaskServer={deleteTask}
-          taggleTaskServer={taggleTask}
+          toggleTaskServer={toggleTask}
           addTaskServer={addTask} />}
     </div>
   );

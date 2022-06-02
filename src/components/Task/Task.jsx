@@ -12,7 +12,7 @@ const Task = ({ key, index, task, deleteTask, toggleTask }) => {
                         backgroundColor: "rgba(0, 0, 0, 0)",
                         borderColor: "rgba(0,0,0,0)"
                     }}
-                    onClick={toggleTask(task.id)}>
+                    onDoubleClick={toggleTask(task.id)}>
                 {index}. {task.text}
                 </button>
                 <FaTimes

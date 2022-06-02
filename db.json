@@ -26,49 +26,6 @@
           "text": "what do you know about OOP"
         }
       ]
-    },
-    {
-      "id": 482887,
-      "title": "tracXpoint",
-      "tasks": [
-        {
-          "id": 14012,
-          "completed": false,
-          "text": "Angularrrrrrrrr"
-        }
-      ]
-    },
-    {
-      "id": 50685,
-      "title": "👋 ",
-      "tasks": [
-        {
-          "id": 10947,
-          "completed": false,
-          "text": "نيشر"
-        },
-        {
-          "id": 7363,
-          "completed": false,
-          "text": "נישר"
-        }
-      ]
-    },
-    {
-      "id": 119970,
-      "title": "משמשמשמש",
-      "tasks": []
-    },
-    {
-      "id": 154566,
-      "title": "מהנדסת תוכנה  - עובדת הייטק",
-      "tasks": [
-        {
-          "id": 16031,
-          "completed": false,
-          "text": "lalalall"
-        }
-      ]
-    }
-  ]
+    } 
+   ]
 }

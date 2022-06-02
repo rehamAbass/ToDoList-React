@@ -11,9 +11,6 @@ const GreenColors = [
 ]
 
 let colors = [
-
-    // 'rgba(255, 255, 1, 0.65)',
-    // 'rgba(65, 105, 225, 0.65)', 'rgba(238, 232, 170, 0.65)',
     'rgba(255, 217, 0, 0.5)',
     'rgba(255, 127, 80, 0.5)', 'rgba(100, 148, 237, 0.5)',
     'rgba(255, 105, 180, 0.5)',
@@ -25,12 +22,12 @@ let colors = [
     'rgba(255, 239, 213, 0.5)', 'rgba(152, 251, 152, 0.5)']
 
 colors = GreenColors;
-// colors = ['rgba(118,198,198,0.6)', 'rgba(66, 120, 230,0.6)'];
-const Lists = ({ cards, deleteCard, deleteTaskServer, addTaskServer, taggleTaskServer }) => {
+
+const Lists = ({ cards, deleteCard, deleteTaskServer, addTaskServer, toggleTaskServer }) => {
 
 
-    let rand = Math.floor(Math.random(3456789));
-    rand = 0;
+    let rand = Math.floor(Math.random(100));
+    // rand = 0;
     return (
         <div className='lists'>
             {cards.map((card, i) => {
@@ -40,7 +37,7 @@ const Lists = ({ cards, deleteCard, deleteTaskServer, addTaskServer, taggleTaskS
                         card={card}
                         deleteCard={deleteCard}
                         deleteTaskServer={deleteTaskServer}
-                        taggleTaskServer={taggleTaskServer}
+                        toggleTaskServer={toggleTaskServer}
                         addTaskServer={addTaskServer}
                         background={colors[(rand + i) % colors.length]}
                     />
