@@ -18,7 +18,7 @@
     border: 1px solid rgba(0, 0, 0, 0.4);
     transition: transform 0.5s ease-out;
     width: 250px;
-    
+    font-weight: 500;
         /* max-height: min-content; */
         /* height: 300px; */
         overflow-y: scroll;
@@ -31,7 +31,7 @@
         width: content;
         /* min-height: max-content; */
         transform: scale(1.5);
-        box-shadow: 1px 1px 16px 10px rgba(81, 20, 100, 0.616);
+        box-shadow: 1px 2px 16px 10px rgba(115, 0, 255, 0.616);
         /* rgba(85, 83, 255 */
     min-height: max-content;
     min-height: min-content;
@@ -39,7 +39,7 @@
     /* font-size: larger;
     font-weight: bolder;
     font-style: italic; */
-    border-radius: 4%;
+    border-radius: 9%;
         height: fit-content;
         /* 300px; */
         

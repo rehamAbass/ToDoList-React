@@ -5,7 +5,7 @@ const Header = () => {
 
     return (
         <header style={{
-            backgroundColor: "rgba(250,250,250,0.2)",
+            backgroundColor: "rgba(200,200,220,0.2)",
             boxShadow: "5px 5px 40px 2px rgba(105, 110, 235,0.7)"
         }}>
 

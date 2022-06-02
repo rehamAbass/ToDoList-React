@@ -53,5 +53,5 @@
     transform: scale(1.2);
     cursor: pointer;
     border-radius: 100%;
-    box-shadow: 1px 1px 12px 1px rgb(94, 255, 10);
+    box-shadow: 1px 1px 12px 10px rgb(94, 255, 100);
 }

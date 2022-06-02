@@ -19,13 +19,7 @@
     {
       "id": 4,
       "title": "card 4",
-      "tasks": [
-        {
-          "id": 1,
-          "completed": false,
-          "text": "what do you know about OOP"
-        }
-      ]
-    } 
-   ]
+      "tasks": []
+    }
+  ]
 }
