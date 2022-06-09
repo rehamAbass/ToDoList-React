@@ -1,0 +1,11 @@
+.myRepo {
+    color: blue;
+    align-self: center;
+    text-shadow: 20px azure;
+    /* background-color: rgba(252, 86, 210, 0.635); */
+}
+
+.myRepo:hover {
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+}
