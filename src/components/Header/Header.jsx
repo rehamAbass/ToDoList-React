@@ -1,12 +1,13 @@
 
 import './Header.css'
 import React from 'react'
+
 const Header = () => {
 
     return (
         <header style={{
             backgroundColor: "rgba(200,200,220,0.2)",
-            boxShadow: "5px 5px 40px 2px rgba(105, 110, 235,0.7)"
+            boxShadow: "2px 2px 30px 5px rgba(105, 110, 235,0.7)"
         }}>
 
 

@@ -31,7 +31,7 @@
         width: content;
         /* min-height: max-content; */
         transform: scale(1.5);
-        box-shadow: 1px 2px 16px 10px rgba(115, 0, 255, 0.616);
+        box-shadow: 1px 1px 5px 3px rgba(115, 0, 255, 0.616);
         /* rgba(85, 83, 255 */
     min-height: max-content;
     min-height: min-content;

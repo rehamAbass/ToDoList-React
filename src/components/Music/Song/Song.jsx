@@ -21,7 +21,7 @@ const Song = ({ key, flag, song, stopOthers, updateFlag }) => {
                 <MdPlayArrow
                     className='oneSongIcon'
                     style={{
-                        color: 'rgba(100, 250, 255)',
+                        color: 'aqua',
                     }}
                     onClick={() => {
                         song.audio.loop = true;
@@ -36,7 +36,7 @@ const Song = ({ key, flag, song, stopOthers, updateFlag }) => {
                 <MdStop
                     className='oneSongIcon'
                     style={{
-                        color: 'red',
+                        color: 'rgba(200, 0, 55, 0.96)',
                     }}
                     onClick={() => {
                         updateFlag(song.id, false);
