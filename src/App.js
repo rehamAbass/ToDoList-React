@@ -224,7 +224,7 @@ function App() {
     let updatedarray = removeCard.push(updatedCard);
     setCards(updatedarray);
     localStorage.setItem("myCards", updatedarray);
-
+    console.log("local storage changed >> ", localStorage.getItem(cards))
     const res = await fetch(`http://localhost:5000/cards/${id}`, {
       method: 'PUT',
       headers: {
