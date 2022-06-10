@@ -67,6 +67,7 @@ function App() {
   ])
   //---------------------------------------------------------------------------------------------------
   useEffect(() => {
+    localStorage.setItem("myCards", cards);
     const getCards = async () => {
       let cardsFromServer = await fetchCards();
       console.log("cards from server = ", cardsFromServer);
@@ -89,6 +90,9 @@ function App() {
   }
   //---------------------------------------------------------------------
   const deleteCard = async (id) => {
+    let temp = cards.filter(c => c.id !== id);
+    localStorage.setItem("myCards", temp);
+
     const res = await fetch(`http://localhost:5000/cards/${id}`, {
       method: 'DELETE',
       headers: {
@@ -97,15 +101,22 @@ function App() {
     });
     let data = await res.json();
     if (res.status < 300 && res.status >= 200) {
+
       await fetchCards();
     }
   }
   //---------------------------------------------------------------------------------------------------
   //fetch card
   const getCard = async (id) => {
+
+    let tempc = cards.filter(c => c.id === id);
+    // localStorage.setItem("myCards", temp);
+    tempc = tempc[0];
+    return tempc;
     const res = await fetch(`http://localhost:5000/cards/${id}`);
     const data = await res.json()
-    return data
+
+    // return data
   }
   //-------------------------------------------------------------------------------
   //Fetch Task
@@ -127,6 +138,9 @@ function App() {
     updatedTasks = [...updatedTasks, newTask];
     const updatedCard = { id: id, title: card.title, tasks: updatedTasks }
     let ourCards = cards.map(c => c.id === id ? updatedCard : c);
+
+    localStorage.setItem("myCards", ourCards);
+
     const res = await fetch(`http://localhost:5000/cards/${id}`, {
       method: 'PUT',
       headers: {
@@ -144,6 +158,9 @@ function App() {
   const addNewCard = async (title) => {
     let newId = Math.floor(Math.random() * 17890) * 31;
     let newCard = { id: newId, title: title, tasks: [] }
+    cards.push(newCard);
+    localStorage.setItem("myCards", cards);
+
     const res = await fetch('http://localhost:5000/cards', {
       method: 'POST',
       headers: {
@@ -202,6 +219,12 @@ function App() {
       title: card.title,
       tasks: updatedTasks
     }
+
+    let removeCard = cards.filter(c => c.id !== id);
+    let updatedarray = removeCard.push(updatedCard);
+    setCards(updatedarray);
+    localStorage.setItem("myCards", updatedarray);
+
     const res = await fetch(`http://localhost:5000/cards/${id}`, {
       method: 'PUT',
       headers: {
@@ -232,7 +255,7 @@ function App() {
           zIndex: "-1",
           position: "fixed",
           right: "0",
-          bottom: "0.4"
+          bottom: "0.02"
         }} />
       {cards.length <= 0 ? 'No CARDS' :
         <List
